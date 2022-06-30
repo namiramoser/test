@@ -1,0 +1,67 @@
+<!--*** Seite ist von Namira erstellt ***-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Namira Moser und Jana Kappeler</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+
+<body>
+
+<!--*** Header mit Navigation ***-->
+<header>
+
+    <nav id="mainNav">
+        <ul>
+            <li><a class="active" href="videos.html">VIDEOS</a></li>
+            <li><a href="fotografiestartseite.html">FOTOGRAFIE</a></li>
+            <a href="./index.html"><img id="logo" src="./assets/startseite/logo_01.png" alt="Logo Namira Moser"></a>
+            <li><a href="contact.html">KONTAKT</a></li>
+            <li><a href="grafikundillustration.html">GRAFIK & ILLUSTRATION</a></li>
+        </ul>
+    </nav>
+
+    <a href="./index.html"><img id="logo2" src="./assets/startseite/logo_01.png" alt="Logo Namira Moser"></a>
+
+    <div id="hamburgerIcon" onclick="openNav()">&#9776;</div>
+
+    <!-- Hamburger Navigation mit einem Close-Button (x), ist im CSS mit "width:0" ausgeblendet  -->
+    <nav id="hamburgerNav">
+        <a class="closebtn" onclick="closeNav()" href="#">&times;</a>
+        <!--  &times; stellt das X dar -->
+        <ul>
+            <li><a href="index.html">HOME</a></li>
+            <li><a class="active" href="videos.html">VIDEOS</a></li>
+            <li><a href="fotografiestartseite.html">FOTOGRAFIE</a></li>
+            <li><a href="contact.html">KONTAKT</a></li>
+            <li><a href="grafikundillustration.html">GRAFIK & ILLUSTRATION</a></li>
+        </ul>
+    </nav>
+</header>
+
+<!--*** Hauptteil ***-->
+<main id="faketrailer">
+    <video width="80%" src="./inhalte/faketrailer.mp4" autoplay muted controls loop></video>
+</main>
+
+<!-- Java Script Funktion.
+    Die Funktion "openNav()" wird ausgeführt, wenn man auf den Hamburger (☰) klickt, die Funktion verändert die Breite von der id "#hamburgernav" im CSS auf 100%.
+    Die Funktion "closeNav()" wird ausgeführt, wenn man auf das Close-Icon (x) klickt, die Funktion verändert die Breite von der id "#hamburgernav" im CSS auf 0%.
+-->
+<script>
+    function openNav() {
+        document.getElementById("hamburgerNav").style.width = "100%";
+    }
+    function closeNav() {
+        document.getElementById("hamburgerNav").style.width = "0%";
+    }
+</script>
+
+
+</body>
+
+</html>
